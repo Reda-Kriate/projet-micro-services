@@ -1,0 +1,23 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    discovery:
+      enabled: true
+      #   on a remplace tous cette config par une class java dans main -> les deux sont static
+#    gateway:
+#      server:
+#        webflux:
+#          routes:
+#                      - id: r1
+#                        uri: http://localhost:8081
+#                        predicates:
+#                          - Path= /customers/**
+#                      - id: r2
+#                        uri: http://localhost:8082
+#                        predicates:
+#                          - Path= /products/**
+
+
