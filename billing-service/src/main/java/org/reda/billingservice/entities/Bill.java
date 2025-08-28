@@ -1,5 +1,6 @@
 package org.reda.billingservice.entities;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -16,7 +17,7 @@ public class Bill {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private Date billDate;
-    private int customerId;
+    private Long customerId;
     @OneToMany(mappedBy = "bill")
     private List<ProductItem> productItems;
     @Transient
