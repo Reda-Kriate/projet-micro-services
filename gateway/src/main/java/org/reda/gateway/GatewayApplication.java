@@ -26,7 +26,7 @@ public class GatewayApplication {
                                                                                                 // de micro service
                 .build();
     }
-    //Configuration dynamique sans @Ip et Nom de service
+    //Configuration dynamique sans @Ip et sans Nom de service
     //on doit mapper sur http://localhost:8888/NOM-SERVICE/endpoint = http://localhost:8888/CUSTOMER-SERVICE/customers
     @Bean
     public DiscoveryClientRouteDefinitionLocator definitionLocator(ReactiveDiscoveryClient rdc,
