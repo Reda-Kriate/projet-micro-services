@@ -20,7 +20,10 @@ public class BillRestController {
     private CustomerRestClient customerRestClient;
     private ProductRestClient productRestClient;
 
-    public BillRestController(ProductItemRepository productItemRepository, BillRepository billRepository, CustomerRestClient customerRestClient, ProductRestClient productRestClient) {
+    public BillRestController(ProductItemRepository productItemRepository,
+                              BillRepository billRepository,
+                              CustomerRestClient customerRestClient,
+                              ProductRestClient productRestClient) {
         this.productItemRepository = productItemRepository;
         this.billRepository = billRepository;
         this.customerRestClient = customerRestClient;

@@ -55,7 +55,6 @@ public class BillingServiceApplication {
 
                 productItemRepository.save(productItem);
             });
-
         };
 
     }
